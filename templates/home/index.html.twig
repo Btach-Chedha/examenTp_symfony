@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper {
+        margin: 1em auto;
+        max-width: 800px;
+        width: 95%;
+        font: 18px/1.5 sans-serif;
+    }
+    .example-wrapper code {
+        background: rgba(185, 165, 165, 0.85);
+        padding: 2px 6px;
+    }
+    .btn-link {
+        display: inline-block;
+        margin-top: 1em;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .btn-link:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    <a href="{{ path('app_register') }}" class="btn-link">S'inscrire</a>
+    <a href="{{ path('app_login') }}" class="btn-link">Se connecter</a>
+    <a href="{{ path('app_produit_new') }}" class="btn-link">Produit</a>
+</div>
+{% endblock %}
